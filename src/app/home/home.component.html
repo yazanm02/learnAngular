@@ -1,0 +1,12 @@
+<!-- Interpolation
+<img src="{{storeInfo.imgurl}}" alt="image Random"> -->
+<!-- Property Binding srcكنك حكيت الو انو هاي بروبارتي  وخذ قيمتها مو اليورل تبع الصوره-->
+ <img *ngIf="IsImageShow" [src]="storeInfo.imgurl" alt="Image Random">
+<button type="button" (click)="ShowImage()">ShowImage</button>
+<!-- Structural Directives   *ngFor -->
+<h1>{{storeInfo.name}}</h1>
+<ul>
+    <li *ngFor="let Item of storeInfo.brenches">
+        {{Item}}
+    </li>
+</ul>
